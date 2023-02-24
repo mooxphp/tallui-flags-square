@@ -1,6 +1,6 @@
 {
-    "name": "usetall/tallui-icons-builder",
-    "description": "A package to easily make use of TallUIIconsBuilder in your Laravel Blade views.",
+    "name": "usetall/tallui-flags-square",
+    "description": "This is my package tallui-flags-square",
     "keywords": [
         "TallUI",
         "Blade",
@@ -8,11 +8,11 @@
         "Laravel",
         "Package"
     ],
-    "homepage": "https://github.com/usetall/tallui-icons-builder",
+    "homepage": "https://github.com/usetall/tallui-flags-square",
     "license": "MIT",
     "authors": [
         {
-            "name": "TallUI Devs"
+            "name": "KimSpeer"
         }
     ],
     "require": {
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Usetall\\TalluiIconsBuilder\\": "src"
+            "Usetall\\TalluiFlagsSquare\\": "src"
         }
     },
     "autoload-dev": {
@@ -37,7 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Usetall\\TalluiIconsBuilder\\TalluiIconsBuilderServiceProvider"
+                "Usetall\\TalluiFlagsSquare\\TalluiFlagsSquareServiceProvider"
             ]
         }
     },

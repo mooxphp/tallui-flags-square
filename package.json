@@ -1,6 +1,5 @@
 {
-    "private": true,
     "dependencies": {
-        "webicons": "^1.0.0"
+        "adrolli-flag-icons": "github:adrolli/flag-icons"
     }
 }

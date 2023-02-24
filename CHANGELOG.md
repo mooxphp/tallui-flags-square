@@ -1,3 +1,3 @@
 # Changelog
 
-All notable changes to `TalluiIconsBuilder` will be documented in this file.
+All notable changes to `TalluiFlagsSquare` will be documented in this file.

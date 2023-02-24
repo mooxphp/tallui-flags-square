@@ -61,24 +61,9 @@
     <br>
 </p>
 
-# TallUI Icons Builder
+# tallui-flags-square
 
-<!--delete-->
 
----
-
-This repo can be used to scaffold a TallUI iconset. Follow these steps to get started:
-
-1. Press the "Use this template" button at the top of [this repo](https://github.com/usetall/tallui-package-builder/) to create a new repo with the contents of this tallui-icons-builder.
-2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
-3. Place your SVGs in /resources/svg (you can use config/generation.php to automagically generate the SVGs from another source like an NPM package, refer to the Building Packages section in the [Blade Icons Docs](https://github.com/blade-ui-kit/blade-icons))
-4. Adjust the prefix (and optionally all other stuff) in the config-file
-
-This package is based on [Blade UI Kit - Blade Icons](https://github.com/blade-ui-kit/blade-icons), learn more about all things Blade Icons like caching there.
-
----
-
-<!--/delete-->
 
 This is where your description should go. Link to the original icons package, if the icons are not drawn by yourself.
 
@@ -92,19 +77,19 @@ This is where your description should go. Link to the original icons package, if
 You can install the package via composer:
 
 ```bash
-composer require usetall/tallui-icons-builder
+composer require usetall/tallui-flags-square
 ```
 
 ## Blade Icons
 
-TallUI Icons Builder uses Blade Icons under the hood. Please refer to [the Blade Icons readme](https://github.com/blade-ui-kit/blade-icons) for additional functionality. We also recommend to [enable icon caching](https://github.com/blade-ui-kit/blade-icons#caching) with this library.
+tallui-flags-square uses Blade Icons under the hood. Please refer to [the Blade Icons readme](https://github.com/blade-ui-kit/blade-icons) for additional functionality. We also recommend to [enable icon caching](https://github.com/blade-ui-kit/blade-icons#caching) with this library.
 
 ## Configuration
 
-TallUI Icons Builder also offers the ability to use features from Blade Icons like default classes, default attributes, etc. If you'd like to configure these, publish the `tallui-icons-builder.php` config file:
+tallui-flags-square also offers the ability to use features from Blade Icons like default classes, default attributes, etc. If you'd like to configure these, publish the `tallui-flags-square.php` config file:
 
 ```bash
-php artisan vendor:publish --tag=tallui-icons-builder-config
+php artisan vendor:publish --tag=tallui-flags-square-config
 ```
 
 ## Usage
@@ -112,19 +97,19 @@ php artisan vendor:publish --tag=tallui-icons-builder-config
 Icons can be used as self-closing Blade components which will be compiled to SVG icons:
 
 ```blade
-<x-webicons-iconname />
+<x-talluiflagssquare-iconname />
 ```
 
 You can also pass classes to your icon components:
 
 ```blade
-<x-webicons-iconname class="w-6 h-6 text-gray-500"/>
+<x-talluiflagssquare-iconname class="w-6 h-6 text-gray-500"/>
 ```
 
 And even use inline styles:
 
 ```blade
-<x-webicons-iconname style="color: #555"/>
+<x-talluiflagssquare-iconname style="color: #555"/>
 ```
 
 ### Raw SVG Icons
@@ -132,13 +117,13 @@ And even use inline styles:
 If you want to use the raw SVG icons as assets, you can publish them using:
 
 ```bash
-php artisan vendor:publish --tag=tallui-icons-builder --force
+php artisan vendor:publish --tag=tallui-flags-square --force
 ```
 
 Then use them in your views like:
 
 ```blade
-<img src="{{ asset('vendor/tallui-icons-builder/iconname.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/tallui-flags-square/iconname.svg') }}" width="10" height="10"/>
 ```
 
 ## Changelog
